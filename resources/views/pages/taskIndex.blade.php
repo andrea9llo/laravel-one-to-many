@@ -6,7 +6,7 @@
 
   <ul>
     @foreach ($tasks as $task)
-      <li>{{ $task -> name  }}, {{ $task -> lastname}}: {{$task -> employee}}</li>
+      <li>{{ $task -> name  }}, {{ $task -> lastname}}: {{$task -> employee -> id}}</li>
 
     @endforeach
   </ul>
